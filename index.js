@@ -55,11 +55,11 @@ function guessWord() {
 
             if (randomWord.toLowerCase().indexOf(guess.toLowerCase()) === -1) {
                 guesses--;
-                console.log(chalk.red("INCORRECT! " + guesses + " guesses remaining"))
+                console.log(chalk.red("WRONG! you got  " + guesses + " guesses remaining"))
             } 
             else {
                 if (points < 5) {
-                console.log(chalk.green("CORRECT!"))
+                console.log(chalk.green("YOU GOT THAT ONE RIGHT!"))
             }
             }
 
@@ -98,9 +98,9 @@ function loseGame() {
 
 function winGame() {
     
-    figlet('YOU WIN!', function(err, data) {
+    figlet('YOU WON!', function(err, data) {
         if (err) {
-            console.log('Something went wrong...');
+            console.log('the game is broke :/');
             console.dir(err);
             return;
         }
