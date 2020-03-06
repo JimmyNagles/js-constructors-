@@ -1,15 +1,23 @@
 {
-  "name": "hw",
+  "name": "js-constructors-",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JimmyNagles/js-constructors-.git"
+  },
   "author": "",
   "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/JimmyNagles/js-constructors-/issues"
+  },
+  "homepage": "https://github.com/JimmyNagles/js-constructors-#readme",
   "dependencies": {
-    "chalk": "^2.4.1",
-    "inquirer": "^5.2.0"
+    "chalk": "^3.0.0",
+    "inquirer": "^7.0.6"
   }
 }
