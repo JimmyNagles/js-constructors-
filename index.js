@@ -1,19 +1,12 @@
 var inquirer = require("inquirer");
-
 var Word = require("./Word.js");
-
-
-
 //changes color of text on console
 var chalk = require('chalk');
-
 var guesses = 10;
 var points = 0;
-
 var wordsToGuess = ["FC Bayern Munich", "Chelsea", "Manchester United", "Real Madrid", "Manchester City", "Borussia Dortmund", "Lyon", "Liverpool", "Paris Saint-Germain", "Arsenal", "FC Barcelona"];
 var randomWord;
 var chosenWord;
-
 function startGame() {
 
     console.log(chalk.red("Time to play! guess the football Team!"));
@@ -25,9 +18,6 @@ function getRandomWord() {
 
     chosenWord = new Word(randomWord);
 }
-
-
-
 function guessWord() {
 
     if (guesses > 0 && points < 5) {
@@ -108,10 +98,6 @@ function winGame() {
 
     })
     restartGame();
-
-    
-   
-    
 }
 
 
